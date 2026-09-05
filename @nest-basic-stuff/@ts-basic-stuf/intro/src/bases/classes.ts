@@ -1,4 +1,5 @@
 import axios from "axios";
+import type { Move, PokeapiResponse } from "../interfaces/pokeapi-response.interface";
 
 // representacion de un objeto de la vida real, con propiedades y metodos
 export class Artist {
@@ -31,7 +32,6 @@ export class Producers {
   constructor(
     public readonly id: number,
     public name: string,
-    // public imageUrl?: string
   ) { }
 
   // ----------------------
@@ -48,8 +48,8 @@ export class Producers {
   }
 
   // Async
-  async getMoves() {
-    const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${this.id}`);
+  async getMoves(): Promise<Move[]> {
+    const { data } = await axios.get<PokeapiResponse>(`https://pokeapi.co/api/v2/pokemon/${this.id}`);
     const moves = data.moves;
     return moves;
   }
