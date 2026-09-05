@@ -10,6 +10,9 @@ import { pokemonIds, rapArtists, kanye } from "./bases/objects.ts";
 //classes
 import { lilWayne } from "./bases/classes.ts";
 
+// injection dependencies
+import { charmander, bulbasaur } from "./bases/injection.ts";
+
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 <section id="center">
   <div class="hero">
@@ -27,6 +30,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
     <h2>It's ts Interface ${rapArtists.map(artist => artist.name).join(", ")}</h2>
     <h2>It's ts Class ${lilWayne.name} ${lilWayne.id}</h2>
+
+    <h2>It's ts Class by Injection Dependency ${charmander.name} ${charmander.id}</h2>
+
 
   </div>
 
