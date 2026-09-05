@@ -14,3 +14,13 @@ Core building blocks personalizados
 Carga de archivos
 Entidades y esquemas
 Validaciones
+
+
+
+-- FIRST PROJECT IDEA
+RAG // AI SYSTEM LET YOU KNOW MORE MUSIC ABOUT AN ARTIST AND GIVE YOU A ROADMAP
+
+EXAMPLE
+Listen Veteran by Jpeg
+this gonna show more works and off stream
+also this gonna give you another alter like Devon Hnedryx
