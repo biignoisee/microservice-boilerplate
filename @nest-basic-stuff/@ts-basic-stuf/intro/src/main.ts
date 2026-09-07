@@ -28,7 +28,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
     <h2>It's ts Objects ${pokemonIds.join(", ")}</h2>
 
-    <h2>It's ts Interface ${rapArtists.map(artist => artist.name).join(", ")}</h2>
+    <h2>It's ts Interface ${rapArtists.map((artist) => artist.name).join(", ")}</h2>
     <h2>It's ts Class ${lilWayne.name} ${lilWayne.id}</h2>
 
     <h2>It's ts Class by Injection Dependency ${charmander.name} ${charmander.id}</h2>
